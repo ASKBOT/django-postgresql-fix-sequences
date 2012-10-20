@@ -1,0 +1,2 @@
+django-postgresql-fix-sequences
+===============================
