@@ -1,0 +1,1 @@
+from postgresql_sequence_utils.tests.test_cases import Tests
