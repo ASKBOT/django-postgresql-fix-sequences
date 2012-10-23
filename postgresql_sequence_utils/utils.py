@@ -44,7 +44,7 @@ def print_info(sequence_info):
     """prints out the sequence data"""
     format_str = "%-10s%-10s%-10s %s"
     print format_str % ('Current', 'Maximum', 'Increment', 'Table name')
-    for table, info in sequence_info.values():
+    for table, info in sequence_info.items():
         print format_str % (
                     info['current_value'],
                     info['max_value'],
