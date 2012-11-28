@@ -12,8 +12,10 @@ def get_broken_sequence_info(sequence_info):
             info[table] = table_info
     return info
 
+
 def parse_table_names(value):
-    return map(lambda v: v.strip, value.split(','))
+    return [v.strip() for v in value.split(',')]
+
 
 def validate_options(options):
     """raises :class:`CommandError` when options are invalid"""
